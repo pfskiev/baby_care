@@ -1,0 +1,31 @@
+{% extends 'care/index.html' %}
+
+{% block content %}
+    <ol class="breadcrumb">
+            <li><a href="index.html">Главная</a></li>
+            <li class="active">Где купить</li>
+        </ol>
+        {% for article in article_list %}
+            <div class="row">
+                <div class="col-md-3">
+                    {% if article.img %}
+                        <a href=""><img src="http://localhost:8000/map/{{ article.image }}" alt=""></a>
+                    {% endif %}
+                </div>
+                <div class="col-md-9">
+                    <p class="title main">Где купить</p>
+                    <div>
+                        <p class="title">{{ article.name }}</p>
+                        <p>{{ article.address }}</p>
+
+                        {% for phone in phone_list %}
+
+                        {% endfor %}
+
+                        <p>{{ article.phone }}</p>
+                        <p>{{ article.phone }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+{% endblock %}

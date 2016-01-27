@@ -1,0 +1,35 @@
+{% extends 'care/index.html' %}
+
+{% block content %}
+    <ol class="breadcrumb">
+        <li><a href="index.html">Главная</a></li>
+        <li class="active">Сертификаты</li>
+    </ol>
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-9">
+            <p class="title main">Каталог</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            {% include 'care/templates/aside.html' %}
+        </div>
+        <div class="col-md-9">
+        <div class="row">
+            {% for product in article_list %}
+                <div class="col-md-4">
+                    <div class="product-card">
+                        {% if product.image %}
+                            <a href="product.html"><img width="200" height="200" src="http://localhost:8000/media/{{ product.image }}" alt=""></a>
+                        {% endif %}
+                        <p class="name">{{ product.title }}</p>
+                        <p class="price">{{ product.price }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        </div>
+    </div>
+{% endblock %}

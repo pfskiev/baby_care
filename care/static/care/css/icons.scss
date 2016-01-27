@@ -1,0 +1,49 @@
+.icon {
+  display: block;
+  cursor: pointer;
+  background-size: contain;
+  transition: background 200ms ease;
+}
+
+.telephone-icon {
+  margin-right: 10px;
+  display: block;
+  float: left;
+  width: 24px;
+  height: 17px;
+  background-image: url(../img/24x21_telephone_btn.png);
+  background-size: contain;
+}
+
+.life-icon {
+  margin-left: 3px;
+  margin-top: 2px;
+  margin-right: 7px;
+  display: block;
+  float: left;
+  width: 24px;
+  height: 13px;
+  background-image: url(../img/Life_icon.png);
+  background-size: contain;
+}
+
+.icon.menu {
+  background-image: url(../img/24x21_Catalog_btn_normal.png);
+  width: 24px;
+  height: 21px;
+}
+
+.icon.menu:hover, .icon.menu:focus {
+  background-image: url(../img/24x21_Catalog_btn_down.png);
+  width: 24px;
+  height: 21px;
+}
+a.navbar-toggle.collapsed {
+  border: none;
+  background-color: $header-color;
+}
+
+a.navbar-toggle.collapsed:hover, a.navbar-toggle.collapsed:focus, a.navbar-toggle.collapsed:active, .navbar-toggle:hover, a.navbar-toggle:focus, a.navbar-toggle:active {
+  border: none;
+  background-color: $header-color;
+}

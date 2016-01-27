@@ -1,0 +1,25 @@
+$header-color: #f5f5f5;
+$body-color: #efefef;
+$focus: #48d1cc;
+
+body {
+  font-size: 24px;
+  font-family: 'HelveticaNeueCyr-Roman', sans-serif;
+  color: #666;
+  background: url(../img/1024_BabyCare_home.png) no-repeat;
+  //background: url(../img/1024_BabyCare_menu_catalog.png) no-repeat;
+  //background: url(../img/1024_BabyCare_kontakty.png) no-repeat;
+  width: 100%;
+  max-width: 1024px;
+  background: #efefef;
+  background-size: contain;
+}
+
+@import 'fonts';
+@import 'header';
+@import 'nav';
+@import 'footer';
+@import 'section';
+@import 'scss/dropdown-menu';
+@import 'scss/banners';
+@import 'icons';

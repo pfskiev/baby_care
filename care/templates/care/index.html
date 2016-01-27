@@ -1,0 +1,28 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>БебиКеа - Главная</title>
+    <link href="{% static 'care/bower_components/bootstrap/dist/css/bootstrap.min.css'%}" rel="stylesheet">
+    <link href="{% static 'care/css/styles.css'%}" rel="stylesheet">
+</head>
+<body class="container-fluid">
+{% include 'care/templates/header.html' %}
+{% include 'care/templates/navbar-test.html' %}
+
+<section>
+    {% block content %}
+    {% endblock %}
+</section>
+
+{% include 'care/templates/footer.html' %}
+<script src="{% static 'care/bower_components/jquery/dist/jquery.min.js' %}"></script>
+<script src="{% static 'care/bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'care/js/main.js' %}"></script>
+</body>
+</html>

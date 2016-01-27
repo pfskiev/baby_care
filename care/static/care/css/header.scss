@@ -1,0 +1,88 @@
+header.row {
+  margin: 0;
+  width: 100%;
+  max-width: 1024px;
+  background-color: $header-color;
+}
+
+header p {
+  font-family: 'HelveticaNeueCyr-Light', sans-serif;
+  font-size: 17px;
+  color: #666;
+}
+
+header.row p{
+  margin: 0;
+}
+
+header .logo {
+    margin-top: 7px;
+    margin-left: -30px;
+    width: 253px;
+    height: 51px;
+    position: relative;
+    left: 61px;
+    top: 19px;
+    z-index: 84;
+    background: url(../img/logo_1024.png) no-repeat;
+    background-size: contain;
+}
+
+header .logo-xs {
+
+  margin-top: 7px;
+    margin-left: -30px;
+    width: 98px;
+    height: 21px;
+    position: relative;
+    left: 61px;
+    top: 19px;
+    z-index: 84;
+    background: url(../img/logo-head-xs.png) no-repeat;
+    background-size: contain;
+
+}
+
+
+
+header .title {
+    margin-top: 30px;
+    margin-left: 113px;
+    font-family: 'HelveticaNeueCyr-Light', sans-serif;
+    font-size: 17px;
+    color: #666;
+}
+
+.contact-wrapper {
+  padding-top: 37px;
+  padding-left: 50px;
+}
+
+.search-wrapper {
+  padding-top: 66px;
+  padding-left: 25px;
+  input {
+    padding: 7px;
+    width: 90%;
+    height: 31px;
+    float: left;
+    font-family: 'HelveticaNeueCyr-Light', sans-serif;
+    font-size: 17px;
+    color: #666;
+    border: 1px solid #aaa;
+  }
+}
+
+.search-wrapper span.glyphicon.glyphicon-search{
+  font-size: 19px;
+  position: relative;
+  right: 33px;
+  top: 6px;
+  color: #666;
+}
+
+div.search-wrapper>span.glyphicon.glyphicon-search {
+  position: relative;
+  top: 0;
+  right: 25px;
+}
