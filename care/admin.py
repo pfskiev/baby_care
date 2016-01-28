@@ -1,5 +1,5 @@
 from django.contrib import admin
-from care.models import Article, Certificate, Brand, Product, Contact, Map, About
+from care.models import Article, Certificate, Brand, Product, Contact, Map, About, Menu, SubMenu, Pages
 
 
 class ArticleAdmin(admin.ModelAdmin):
@@ -41,6 +41,18 @@ class AboutAdmin(admin.ModelAdmin):
     search_fields = ['description']
 
 
+class MenuAdmin(admin.ModelAdmin):
+    list_display = ['title']
+
+
+class SubMenuAdmin(admin.ModelAdmin):
+    list_display = ['title']
+
+
+class PagesAdmin(admin.ModelAdmin):
+    list_display = ['title']
+
+
 admin.site.register(Article, ArticleAdmin)
 admin.site.register(Certificate, CertificatesAdmin)
 admin.site.register(Brand, BrandsAdmin)
@@ -48,3 +60,6 @@ admin.site.register(Product, ProductAdmin)
 admin.site.register(Contact, ContactAdmin)
 admin.site.register(Map, MapAdmin)
 admin.site.register(About, AboutAdmin)
+admin.site.register(Menu, MenuAdmin)
+admin.site.register(SubMenu, SubMenuAdmin)
+admin.site.register(Pages, PagesAdmin)

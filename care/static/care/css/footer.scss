@@ -1,53 +1,126 @@
 footer {
-  border-top: 15px solid #fad280;
-  font-family: 'HelveticaNeueCyr-Light', sans-serif;
-  font-size: 17px;
-  color: #333;
-}
-
-footer .title{
-  margin-top: 30px;
-  margin-left: 113px;
-}
-
-footer>div.row>div.col-xs-12.col-sm-12.col-md-12>p {
-  text-align: center;
-}
-
-footer>div.row>div.col-xs-12.col-sm-12.col-md-12 {
-  padding-top: 29px;
-  padding-left: 21px;
-}
-
-footer>div.row>div.col-md-6>h3 {
-  margin-left: 22px;
   font-family: 'HelveticaNeueCyr-Roman', sans-serif;
-  font-size: 20px;
-  color: #333;
+  font-size: 17px;
+  color: $main-text;
+  border-top: 15px solid $orange;
+}
+footer .icon {
+  margin-left: 15px;
+  float: right;
+  width: 39px;
+  height: 39px;
+  border: none;
+  background-size: contain;
+  transition: background 200ms ease;
+}
+a.facebook {
+  background: url(../img/39x39_facebook.png);
+}
+a.facebook:hover,
+a.facebook:focus {
+  background: url(../img/39x39_facebook_up.png);
+}
+a.pinterest {
+  background: url(../img/39x39_pinterest_up.png);
+}
+a.pinterest:hover,
+a.pinterest:focus {
+  background: url(../img/39x39_pinterest_normal.png);
+}
+a.twitter {
+  background: url(../img/39x39_twitter_normal.png);
+}
+a.twitter:hover,
+a.twitter:focus {
+  background: url(../img/39x39_twitter.png);
 }
 
-footer>div.row>div.col-md-6>input {
-  margin-left: 23px;
-  margin-top: 9px;
+footer>div.row.visible-xs a.subscribe.button,
+footer>div.row.hidden-xs a.subscribe.button {
+  transition: background-color 200ms ease;
+}
+footer>div.row.visible-xs a.subscribe.button:hover,
+footer>div.row.hidden-xs a.subscribe.button:hover{
+  background-color: $focus;
+}
+footer>div.row.visible-xs input,
+footer>div.row.hidden-xs input{
+  transition: border 200ms ease;
+}
+footer>div.row.visible-xs input:hover,
+footer>div.row.hidden-xs input:hover{
+  border: 1px solid $focus;
+}
+footer>div.row.visible-xs {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+footer>div.row.visible-xs a.facebook,
+footer>div.row.visible-xs a.twitter,
+footer>div.row.visible-xs a.pinterest {
+  margin-top: 40px;
+}
+footer>div.row.visible-xs h3.subscribe.title {
+  margin-top: 12px;
+  font-family: 'HelveticaNeueCyr-Roman', sans-serif;
+  font-size: $text-size-header;
+  color: $main-text;
+}
+footer input {
+  margin-top: 10px;
   padding: 9px;
   display: block;
-  float: left;
-  width: 280px;
-  height: 36px;
-  font-family: 'HelveticaNeueCyr-Light', sans-serif;
-  font-size: 17px;
-  color: #333;
+  height: 35px;
+  font-family: 'HelveticaNeueCyr-Roman', sans-serif;
+  font-size: $text-size-main;
+  color: $main-text;
   border: 1px solid #aaa;
 }
-
-footer>div.row>div.col-md-6>a{
-  margin-top: 9px;
-  margin-left: 9px;
+footer>div.row.visible-xs input {
+  width: 100%;
+}
+footer>div.row.visible-xs a.subscribe.button {
+  margin-top: 20px;
   padding-top: 7px;
   display: block;
-  float: left;
+  width: 100%;
   height: 35px;
-  width: 144px;
+  font-family: 'HelveticaNeueCyr-Light', sans-serif;
+  font-size: $text-size-main;
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  text-decoration: none;
+  background: #079e9e;
+  transition: background-color 200ms ease;
+}
+footer>div.row.visible-xs p {
+  margin-top: 36px;
+  font-family: 'HelveticaNeueCyr-Roman', sans-serif;
+  font-size: $text-size-main;
+  color: $header-text;
+}
+footer div.row.hidden-xs {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+footer>div.row.hidden-xs h3.subscribe.title {
+  margin-top: 35px;
+  font-family: 'HelveticaNeueCyr-Roman', sans-serif;
+  font-size: $text-size-header;
+  color: $main-text;
+}
+footer>div.row.hidden-xs input {
+  width: 55%;
+  float: left;
+}
+footer>div.row.hidden-xs a.subscribe.button {
+  margin-top: 10px;
+  padding-top: 7px;
+  display: block;
+  float: right;
+  width: 35%;
+  height: 35px;
   font-family: 'HelveticaNeueCyr-Light', sans-serif;
   font-size: 17px;
   color: #fff;
@@ -57,97 +130,19 @@ footer>div.row>div.col-md-6>a{
   background: #079e9e;
   transition: background-color 200ms ease;
 }
-
-footer>div.row>div.col-md-6>a:hover, footer>div.row>div.col-md-6>a:focus {
-  background: #48d1cc;
+footer>div.row.hidden-xs a.twitter {
+  margin-top: 75px;
 }
-
-footer>div.row>div.col-md-6>a.facebook{
-  float: right;
-  background: url(../img/39x39_facebook.png);
-  background-size: contain;
-  width: 39px;
-  height: 39px;
-  border: none;
-  transition: background 200ms ease;
-
+footer>div.row.hidden-xs a.facebook {
+  margin-top: 75px;
 }
-
-footer>div.row>div.col-md-6>a.facebook:hover, footer>div.row>div.col-md-6>a.facebook:focus{
-  background: url(../img/39x39_facebook_up.png);
-  background-size: contain;
-  width: 39px;
-  height: 39px;
+footer>div.row.hidden-xs a.pinterest {
+  margin-top: 75px;
 }
-
-footer>div.row>div.col-md-6>a.pinterest{
-  float: right;
-  background: url(../img/39x39_pinterest_up.png);
-  background-size: contain;
-  width: 39px;
-  height: 39px;
-  border: none;
-  transition: background 200ms ease;
-}
-
-footer>div.row>div.col-md-6>a.pinterest:hover, footer>div.row>div.col-md-6>a.pinterest:focus{
-  background: url(../img/39x39_pinterest_normal.png);
-  background-size: contain;
-  width: 39px;
-  height: 39px;
-}
-
-footer>div.row>div.col-md-6>a.twitter{
-  float: right;
-  background: url(../img/39x39_twitter_normal.png);
-  background-size: contain;
-  width: 39px;
-  height: 39px;
-  border: none;
-  transition: background 200ms ease;
-}
-
-footer>div.row>div.col-md-6>a.twitter:hover, footer>div.row>div.col-md-6>a.twitter:focus{
-  background: url(../img/39x39_twitter.png);
-  background-size: contain;
-  width: 39px;
-  height: 39px;
-}
-
-footer>div.row>div.col-md-6>a.visible-xs {
-    margin-top: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 7px;
-    display: block;
-    float: left;
-    height: 35px;
-    width: 100%;
-    font-family: 'HelveticaNeueCyr-Light', sans-serif;
-    font-size: 17px;
-    color: #fff;
-    font-weight: 100;
-    text-align: center;
-    text-decoration: none;
-    background: #079e9e;
-    transition: background-color 200ms ease;
-}
-
-footer>div.row>div.col-md-6>input.visible-xs {
-  display: block;
-  float: left;
-  margin-top: 10px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 7px;
-  width: 100%;
-  height: 36px;
-  font-family: 'HelveticaNeueCyr-Light', sans-serif;
-  font-size: 17px;
-  color: #333;
-  border: 1px solid #aaa;
-}
-
-footer>div.row>div.col-md-6>a.visible-xs:hover {
-  background: #48d1cc;
+footer>div.row.hidden-xs p {
+  margin-top: 34px;
+  text-align: center;
+  font-family: 'HelveticaNeueCyr-Roman', sans-serif;
+  font-size: $text-size-main;
+  color: $header-text;
 }

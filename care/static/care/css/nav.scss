@@ -19,7 +19,7 @@ nav>ul>li {
   padding-left: 30px;
 }
 
-nav a {
+nav .nav-justified>li>a {
   font-family: 'HelveticaNeueCyr-Light', sans-serif;
   font-size: 20px;
   font-weight: 100;
@@ -29,16 +29,10 @@ nav a {
   transition: color 200ms ease;
 }
 
-nav a.active {
-  color: #079e9e;
-}
-
-nav a:focus, nav a:hover {
+nav .nav-justified>li> a.active, nav .nav-justified>li> a:hover, nav .nav-justified>li> a:focus{
   color: #079e9e;
   text-decoration: none;
 }
-
-// customize bootstrap classes
 
 .navbar-default {
   background-color: $header-color;
