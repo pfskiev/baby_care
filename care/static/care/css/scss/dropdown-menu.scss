@@ -1,14 +1,12 @@
 .open>.dropdown-menu.catalogue {
   position: absolute;
-  width: 960px;
+  width: 100%;
   display: block;
-  margin-left: 29px;
-  margin-right: 29px;
-  left: -207px;
   border: none;
   background: #f5f5f5;
   top: 45px;
   border-radius: 0;
+  border-bottom: 15px solid #48d1cc;
 }
 
 .open>.dropdown-menu.catalogue>div.row>div.col-md-4>ul>li {
@@ -17,7 +15,7 @@
 
 .open>.dropdown-menu.catalogue>div.row>div.col-md-4 {
   padding-top: 21px;
-  padding-left: 33px;
+  //padding-left: 33px;
   padding-bottom: 20px;
 }
 .open>.dropdown-menu.catalogue>div.row>div.col-md-4>ul>li>a {

@@ -1,5 +1,7 @@
 from django.contrib import admin
-from care.models import Article, Certificate, Brand, Product, Contact, Map, About, Menu, SubMenu, Pages
+from django.forms import forms, ModelChoiceField
+
+from care.models import Article, Certificate, Brand, Product, Contact, Map, About, Menu, SubMenu, Pages, Banner, Task
 
 
 class ArticleAdmin(admin.ModelAdmin):
@@ -37,7 +39,7 @@ class MapAdmin(admin.ModelAdmin):
 
 
 class AboutAdmin(admin.ModelAdmin):
-    list_display = ('title', 'address', 'phone', 'description')
+    list_display = ['address', 'phone', 'description']
     search_fields = ['description']
 
 
@@ -53,6 +55,11 @@ class PagesAdmin(admin.ModelAdmin):
     list_display = ['title']
 
 
+
+
+
+
+
 admin.site.register(Article, ArticleAdmin)
 admin.site.register(Certificate, CertificatesAdmin)
 admin.site.register(Brand, BrandsAdmin)
@@ -63,3 +70,5 @@ admin.site.register(About, AboutAdmin)
 admin.site.register(Menu, MenuAdmin)
 admin.site.register(SubMenu, SubMenuAdmin)
 admin.site.register(Pages, PagesAdmin)
+admin.site.register(Banner)
+admin.site.register(Task)

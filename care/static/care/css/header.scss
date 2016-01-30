@@ -1,8 +1,20 @@
-header.row {
+header div.row {
   margin: 0;
   width: 100%;
   max-width: 1024px;
   background-color: $header-color;
+}
+
+header div.row.visible-xs h2.title{
+  margin-left:0;
+  font-family: 'HelveticaNeueCyr-Light', sans-serif;
+  color: $header-text;
+  margin-top: 30px;
+  font-size: 15px;
+}
+div.col-xs-6>span.telephone-icon {
+  margin-top: 40px;
+  float: right;
 }
 
 header p {
@@ -42,12 +54,31 @@ header .logo-xs {
     background-size: contain;
 
 }
+header>div.row.visible-xs input:hover,
+header>div.row.hidden-xs input:hover{
+  transition: border 200ms ease;
+}
 
+header>div.row.visible-xs input:hover,
+header>div.row.hidden-xs input:hover{
+  border: 1px solid $focus;
+}
+
+header .logo-sm {
+  margin-top: 7px;
+    width: 178px;
+    height: 36px;
+    position: relative;
+    top: 19px;
+    z-index: 84;
+    background: url(../img/logo-head-sm.png) no-repeat;
+    background-size: contain;
+}
 
 
 header .title {
     margin-top: 30px;
-    margin-left: 113px;
+    margin-left: 47px;
     font-family: 'HelveticaNeueCyr-Light', sans-serif;
     font-size: 17px;
     color: #666;
@@ -64,7 +95,7 @@ header .title {
   input {
     padding: 7px;
     width: 90%;
-    height: 31px;
+    height: 35px;
     float: left;
     font-family: 'HelveticaNeueCyr-Light', sans-serif;
     font-size: 17px;
@@ -83,6 +114,6 @@ header .title {
 
 div.search-wrapper>span.glyphicon.glyphicon-search {
   position: relative;
-  top: 0;
+  top: 3px;
   right: 25px;
 }
