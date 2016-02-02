@@ -1,11 +1,9 @@
 {% extends 'care/index.html' %}
-
 {% block content %}
-{#    <ol class="breadcrumb">#}
-{#        <li><a href="index.html">Главная</a></li>#}
-{#        <li class="active">Статьи</li>#}
-{#    </ol>#}
-
+    <ol class="breadcrumb">
+        <li><a href="index.html">Главная</a></li>
+        <li class="active">Статьи</li>
+    </ol>
     {% include 'care/templates/breadcrumb.html' %}
     {% for article in article_list %}
             <div class="row">

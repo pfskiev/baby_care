@@ -1,14 +1,10 @@
 {% extends 'care/index.html' %}
-
 {% block content %}
-{#    <ol class="breadcrumb">#}
-{#            <li><a href="index.html">Главная</a></li>#}
-{#            <li class="active">О компании БК</li>#}
-{#    </ol>#}
-
+    {% load staticfiles %}
+    <div class="banner-wrapper">
+        <img src="{% static 'care/img/banner-about.jpg' %}" alt="">
+    </div>
     {% include 'care/templates/breadcrumb.html' %}
-
-
         {% for article in article_list %}
             <div class="row">
                 <div class="col-md-3">

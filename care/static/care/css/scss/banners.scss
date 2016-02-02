@@ -6,7 +6,6 @@ section>div.banner-about {
   background-image: url(../../img/banner-about.jpg);
   background-size: contain;
 }
-
 section>div.banner-about>span.banner-line-bottom{
   display: block;
   width: 1024px;
@@ -15,5 +14,13 @@ section>div.banner-about>span.banner-line-bottom{
   top: 494px;
   background-image: url(../../img/banner-line-bottom.jpg);
   background-size: contain;
+}
+.banner-wrapper {
+  margin-right:-15px;
+  margin-left:-15px;
+  border-bottom: 15px solid #48d1cc;
+  img {
+    width: 100%;
+  }
 }
 

@@ -21,9 +21,7 @@ body {
   max-width: 1024px;
   background: $body-color;
   background-size: contain;
-
 }
-
 
 @import 'fonts';
 @import 'header';
@@ -33,3 +31,4 @@ body {
 @import 'scss/dropdown-menu';
 @import 'scss/banners';
 @import 'icons';
+@import 'flexbox';

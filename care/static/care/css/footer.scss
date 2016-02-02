@@ -146,3 +146,9 @@ footer>div.row.hidden-xs p {
   font-size: $text-size-main;
   color: $header-text;
 }
+
+@media screen and (max-width: 480px) {
+  ._column {
+    width: 100%;
+  }
+}
